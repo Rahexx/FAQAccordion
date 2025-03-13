@@ -1,0 +1,27 @@
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: $size-527;
+  width: $size-327;
+  padding: $space-24;
+  background: $white;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: $space-24;
+    margin-bottom: $space-24;
+    color: $dark-purple;
+    font-size: $text-32;
+    font-weight: $font-bold;
+  }
+
+  &__icon {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+  }
+}
