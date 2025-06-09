@@ -8,12 +8,13 @@
   background: $white;
   transform: translate(-50%, -50%);
   border-radius: 8px;
+  overflow: hidden;
 
   &__title {
     display: flex;
     align-items: center;
     gap: $space-24;
-    margin-bottom: $space-24;
+    margin-bottom: $space-4;
     color: $dark-purple;
     font-size: $text-32;
     font-weight: $font-bold;
