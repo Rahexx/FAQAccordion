@@ -12,7 +12,6 @@
 
   &__question {
     width: $size-225;
-    font-size: $text-16;
   }
 
   &__content {
@@ -34,5 +33,33 @@
 
   &:not(:first-of-type) {
     border-top: 1px solid $light-pink;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .collapse {
+    padding: $space-24 0;
+
+    &__header {
+      font-size: $text-18;
+      cursor: pointer;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $pink;
+      }
+    }
+
+    &__question {
+      width: $size-450;
+    }
+
+    &__content {
+      font-size: $text-16;
+    }
+
+    &.active &__content {
+      max-height: 520px;
+    }
   }
 }
