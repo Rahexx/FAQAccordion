@@ -14,7 +14,6 @@
     display: flex;
     align-items: center;
     gap: $space-24;
-    margin-bottom: $space-4;
     color: $dark-purple;
     font-size: $text-32;
     font-weight: $font-bold;
@@ -24,5 +23,23 @@
     display: inline-block;
     height: 24px;
     width: 24px;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .card {
+    height: $size-565;
+    width: $size-600;
+    padding: $space-40;
+    border-radius: 16px;
+
+    &__title {
+      font-size: $text-56;
+    }
+
+    &__icon {
+      height: 40px;
+      width: 40px;
+    }
   }
 }
