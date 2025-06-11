@@ -30,7 +30,7 @@
 
   &.active &__content {
     margin-top: $space-24;
-    max-height: 500px;
+    max-height: $size-500;
     opacity: 1;
   }
 
@@ -44,7 +44,7 @@
     padding: $space-24 0;
 
     &__header {
-      font-size: $text-18;
+      font-size: $text-17;
       cursor: pointer;
       transition: color 0.3s ease-in-out;
 
@@ -62,7 +62,13 @@
     }
 
     &.active &__content {
-      max-height: 520px;
+      max-height: $size-520;
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collapse__content {
+    transition: none !important;
   }
 }

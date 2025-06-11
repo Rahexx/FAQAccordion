@@ -9,6 +9,7 @@
   transform: translate(-50%, -50%);
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 32px 56px rgba(80, 0, 118, 0.1);
 
   &__title {
     display: flex;
@@ -21,8 +22,8 @@
 
   &__icon {
     display: inline-block;
-    height: 24px;
-    width: 24px;
+    height: $size-24;
+    width: $size-24;
   }
 }
 
@@ -39,8 +40,8 @@
     }
 
     &__icon {
-      height: 40px;
-      width: 40px;
+      height: $size-40;
+      width: $size-40;
     }
   }
 }
