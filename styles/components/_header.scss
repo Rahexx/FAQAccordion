@@ -1,6 +1,6 @@
 .header {
   &__decorator {
-    height: 232px;
+    height: $size-232;
     width: 100%;
     display: inline-block;
     object-fit: cover;
@@ -10,6 +10,6 @@
 
 @media (min-width: $breakpoint-tablet) {
   .header__decorator {
-    height: 320px;
+    height: $size-320;
   }
 }
