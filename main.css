@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header__decorator {
+  height: 232px;
+  width: 100%;
+  display: inline-block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 32.9375rem;
+  width: 20.4375rem;
+  padding: 1.5rem;
+  background: hsl(0, 0%, 100%);
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card__title {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: hsl(292, 42%, 14%);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.card__icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+@media (min-width: 48rem) {
+  .card {
+    height: 35.3125rem;
+    width: 37.5rem;
+    padding: 2.5rem;
+    border-radius: 16px;
+  }
+  .card__title {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .card__icon {
+    height: 40px;
+    width: 40px;
+  }
+}
+.collapse {
+  padding: 1.25rem 0;
+}
+.collapse__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: hsl(292, 42%, 14%);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.collapse__question {
+  width: 14.0625rem;
+}
+.collapse__content {
+  max-height: 0;
+  color: hsl(292, 16%, 49%);
+  line-height: 150%;
+  font-size: 0.875rem;
+  font-weight: 400;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+.collapse.active .collapse__content {
+  margin-top: 1.5rem;
+  max-height: 500px;
+  opacity: 1;
+}
+.collapse:not(:first-of-type) {
+  border-top: 1px solid hsl(275, 100%, 97%);
+}
+
+@media (min-width: 48rem) {
+  .collapse {
+    padding: 1.5rem 0;
+  }
+  .collapse__header {
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  .collapse__header:hover {
+    color: hsl(281, 83%, 54%);
+  }
+  .collapse__question {
+    width: 28.125rem;
+  }
+  .collapse__content {
+    font-size: 1rem;
+  }
+  .collapse.active .collapse__content {
+    max-height: 520px;
+  }
+}
+.container {
+  font-family: "Work Sans", sans-serif;
+  background: hsl(275, 100%, 97%);
+}
+
+/*# sourceMappingURL=main.css.map */

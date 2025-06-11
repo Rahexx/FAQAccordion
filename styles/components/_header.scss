@@ -1,0 +1,9 @@
+.header {
+  &__decorator {
+    height: 232px;
+    width: 100%;
+    display: inline-block;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
