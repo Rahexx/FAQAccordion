@@ -7,3 +7,9 @@
     object-position: center center;
   }
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .header__decorator {
+    height: 320px;
+  }
+}

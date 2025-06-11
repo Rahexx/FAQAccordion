@@ -43,7 +43,12 @@
         FAQs
       </h1>
       <div class="collapse active">
-        <h3 class="collapse__header">
+        <button
+          class="collapse__header"
+          aria-expanded="true"
+          aria-controls="faq1"
+          id="btn1"
+        >
           <span class="collapse__question"
             >What is Frontend Mentor, and how will it help me?</span
           >
@@ -52,8 +57,13 @@
             alt="expand"
             class="collapse__icon"
           />
-        </h3>
-        <div class="collapse__content">
+        </button>
+        <div
+          id="faq1"
+          class="collapse__content"
+          role="region"
+          aria-labelledby="btn1"
+        >
           <p class="collapse__text">
             Frontend Mentor offers realistic coding challenges to help
             developers improve their frontend coding skills with projects in
@@ -63,15 +73,26 @@
         </div>
       </div>
       <div class="collapse">
-        <h3 class="collapse__header">
+        <button
+          class="collapse__header"
+          aria-expanded="false"
+          aria-controls="faq2"
+          id="btn2"
+        >
           Is Frontend Mentor free?
           <img
             src="./assets/images/icon-plus.svg"
             alt="expand"
             class="collapse__icon"
           />
-        </h3>
-        <div class="collapse__content">
+        </button>
+        <div
+          id="faq2"
+          class="collapse__content"
+          role="region"
+          aria-labelledby="btn2"
+          aria-hidden="true"
+        >
           <p class="collapse__text">
             Yes, Frontend Mentor offers both free and premium coding challenges,
             with the free option providing access to a range of projects
@@ -80,15 +101,26 @@
         </div>
       </div>
       <div class="collapse">
-        <h3 class="collapse__header">
+        <button
+          class="collapse__header"
+          aria-expanded="false"
+          aria-controls="faq3"
+          id="btn3"
+        >
           Can I use Frontend Mentor projects in my portfolio?
           <img
             src="./assets/images/icon-plus.svg"
             alt="expand"
             class="collapse__icon"
           />
-        </h3>
-        <div class="collapse__content">
+        </button>
+        <div
+          id="faq3"
+          class="collapse__content"
+          role="region"
+          aria-labelledby="btn3"
+          aria-hidden="true"
+        >
           <p class="collapse__text">
             Yes, you can use projects completed on Frontend Mentor in your
             portfolio. It's an excellent way to showcase your skills to
@@ -97,15 +129,26 @@
         </div>
       </div>
       <div class="collapse">
-        <h3 class="collapse__header">
+        <button
+          class="collapse__header"
+          aria-expanded="false"
+          aria-controls="faq4"
+          id="btn4"
+        >
           How can I get help if I'm stuck on a challenge?
           <img
             src="./assets/images/icon-plus.svg"
             alt="expand"
             class="collapse__icon"
           />
-        </h3>
-        <div class="collapse__content">
+        </button>
+        <div
+          id="faq4"
+          class="collapse__content"
+          role="region"
+          aria-labelledby="btn4"
+          aria-hidden="true"
+        >
           <p class="collapse__text">
             The best place to get help is inside Frontend Mentor's Discord
             community. There's a help channel where you can ask questions and
