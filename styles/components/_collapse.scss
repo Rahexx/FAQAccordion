@@ -5,12 +5,15 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    background: transparent;
+    border: none;
     color: $dark-purple;
     font-size: $text-16;
     font-weight: $font-semibold;
   }
 
   &__question {
+    text-align: start;
     width: $size-225;
   }
 
